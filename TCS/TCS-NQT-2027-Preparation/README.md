@@ -119,6 +119,7 @@ Use these checklists to track your preparation. Fork this repository and check t
 ### Directory Structure of This Repository
 
 - `/DSA` - Detailed theory, patterns, and coding questions for all data structures.
+- `/SQL_Queries` - High-frequency SQL queries covering joins, window functions, and aggregations.
 - `/Aptitude` - Formulas, tricks, and PYQs for quantitative sections.
 - `/Reasoning` - Logic-building templates and practice sets.
 - `/Verbal` - Grammar rules and vocabulary.
