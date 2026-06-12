@@ -127,13 +127,13 @@ Fork this repository and check the boxes as you complete them!
 
 ### Directory Structure of This Repository
 
-- `/Programming` - 100+ Zoho specific logical programming questions.
-- `/DSA` - Standard Data Structures with theory and code.
-- `/Machine_Coding` - Complete LLD problem statements, class diagrams, and Java solutions.
-- `/OOP` - Object-Oriented Programming concepts and 100 interview questions.
-- `/DBMS` & `/SQL` - Database concepts and complex SQL queries.
-- `/Operating_System` & `/Computer_Networks` - Core CS fundamental notes.
-- `/Zoho_PYQs` - Past year coding and interview questions specific to Zoho.
-- `/HR_Questions` - Top HR questions and sample responses.
+- [**/Programming**](Programming/) - Phase 3: Logical programming questions (Pattern printing, String Manipulation, Matrices, Recursion, Sorting, and Simulations) in **C++**.
+- [**/Machine_Coding**](Machine_Coding/) - Phase 4: Complete LLD problem statements, class diagrams, and **C++** solutions (Library, Movie Booking, Bank, ATM, Parking Lot, Student, Inventory, Employee Management).
+- [**/OOP**](OOP/) - Object-Oriented Programming core concepts and C++ examples.
+- [**/DBMS**](DBMS/) & [**/SQL**](SQL/) - Database concepts, Normalization, ACID properties, and complex SQL queries.
+- [**/Operating_System**](Operating_System/) & [**/Computer_Networks**](Computer_Networks/) - Core CS fundamentals.
+- [**/Zoho_PYQs**](Zoho_PYQs/) - Past year coding (Round 2 & 3) and interview questions (2022-2026) specific to Zoho with **C++** solutions.
+- [**/HR_Questions**](HR_Questions/) - Top 100 HR questions utilizing the STAR method.
+- [**/DSA**](DSA/) - Phase 2: Standard Data Structures with theory and code (Arrays currently complete).
 
 Let's crack Zoho! 🚀
