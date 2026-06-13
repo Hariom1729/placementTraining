@@ -10,6 +10,22 @@ Find the index of the celebrity. If there is no celebrity, return `-1`.
 
 *Note: The diagonal elements `M[i][i]` will always be 0.*
 
+### Example Visual Reference
+
+In the graph below, Person **1** is the Celebrity.
+- Person **0** knows **1**.
+- Person **2** knows **1**.
+- Person **1** knows nobody (no outgoing arrows).
+
+```mermaid
+graph TD
+    0((Person 0)) -->|Knows| 1((Person 1))
+    2((Person 2)) -->|Knows| 1((Person 1))
+    
+    classDef celeb fill:#f9f,stroke:#333,stroke-width:4px;
+    class 1 celeb;
+```
+
 ## Expected Complexity
 - **Time Complexity:** $O(N)$
 - **Space Complexity:** $O(N)$ (for the Stack approach)
