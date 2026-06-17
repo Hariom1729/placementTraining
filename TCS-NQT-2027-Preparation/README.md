@@ -91,13 +91,14 @@ Use these checklists to track your preparation. Fork this repository and check t
 - [ ] Coding & Decoding
 
 ### DSA Tracker
-- [ ] Arrays (1D, 2D)
+- [x] Arrays (1D, 2D)
 - [ ] Strings
 - [ ] Searching & Sorting
 - [ ] Hashing
+- [x] Number Theory & Mathematics
 - [ ] Recursion & Backtracking
 - [ ] Linked List
-- [ ] Stack & Queue
+- [x] Stack & Queue
 - [ ] Trees
 - [ ] Graphs
 - [ ] Dynamic Programming (Basics)
@@ -118,13 +119,10 @@ Use these checklists to track your preparation. Fork this repository and check t
 
 ### Directory Structure of This Repository
 
-- `/DSA` - Detailed theory, patterns, and coding questions for all data structures.
-- `/SQL_Queries` - High-frequency SQL queries covering joins, window functions, and aggregations.
-- `/Aptitude` - Formulas, tricks, and PYQs for quantitative sections.
-- `/Reasoning` - Logic-building templates and practice sets.
-- `/Verbal` - Grammar rules and vocabulary.
-- `/CS_Fundamentals` - High-yield interview notes for OOP, DBMS, OS, and CN.
-- `/HR_Interview` - Behavioral question frameworks and sample answers.
+- [**/DSA**](DSA/) - Detailed theory, patterns, and coding questions (including C++ implementations for Stacks, Number Theory, Arrays, etc.).
+- [**/SQL_Queries**](SQL_Queries/) - High-frequency SQL queries covering joins, window functions, and aggregations.
+- [**/Aptitude_and_Reasoning**](Aptitude_and_Reasoning/) - Formulas, logic-building templates, and PYQs for quantitative/reasoning sections.
+- [**/CS_Fundamentals**](CS_Fundamentals/) - High-yield interview notes for OOP, DBMS, OS, and CN.
 
 ### Recommended External Resources
 - [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/) - Excellent for standard DSA patterns.
