@@ -1,15 +1,13 @@
-# 🔥 High-Probability TCS NQT Coding Questions
-
-TCS NQT (Ninja, Digital, and Prime) is known for testing specific patterns repeatedly across different slots. If you are short on time, these are the **absolute must-do** coding problems that have the highest probability of appearing. 
-
-All solutions below are implemented in **C++**.
-
----
+# 🔥 Top 50 High-Probability TCS NQT Coding Questions (Part 1: Q1 - Q10)
 
 ## 1. Decimal to Base-N Conversion (or vice versa)
 **Concept:** TCS loves number systems. A very frequent question is converting a decimal number to binary, octal, or an arbitrary base (like base 17), or converting from base-N to decimal.
 
-**Problem:** Convert a decimal number to Binary.
+**Example:**
+- **Input:** N = 25
+- **Output:** 11001
+- **Explanation:** 25 in binary is represented as 11001.
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -36,7 +34,11 @@ int main() {
 ## 2. Counting Frequencies of Elements/Characters
 **Concept:** Arrays or Strings where you need to count occurrences to find duplicates, unique elements, or the most frequent element. (Using Hash Maps).
 
-**Problem:** Find the first non-repeating character in a string.
+**Example:**
+- **Input:** str = "tcsnqttcs"
+- **Output:** 3 (Index of 'n')
+- **Explanation:** 't', 'c', and 's' repeat. The first character that does not repeat is 'n' at index 3.
+
 ```cpp
 #include <iostream>
 #include <unordered_map>
@@ -62,7 +64,11 @@ int main() {
 ## 3. Second Largest and Second Smallest Element
 **Concept:** TCS frequently asks for the second largest or second smallest element in an array *without* using the built-in sorting function, requiring a single or double pass $O(N)$ solution.
 
-**Problem:** Find the Second Largest element.
+**Example:**
+- **Input:** arr = [12, 35, 1, 10, 34, 1]
+- **Output:** 34
+- **Explanation:** The largest element is 35. The second largest is 34.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -92,7 +98,11 @@ int main() {
 ## 4. Valid Anagram
 **Concept:** String manipulation is a heavy focus in TCS Ninja. Checking if two strings are anagrams of each other.
 
-**Problem:** Check if two strings are anagrams.
+**Example:**
+- **Input:** s = "listen", t = "silent"
+- **Output:** Yes
+- **Explanation:** Both strings contain the exact same characters with the same frequencies.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -121,7 +131,11 @@ int main() {
 ## 5. Subarray with Given Sum (Sliding Window)
 **Concept:** Often asked in the Digital profile. Given an array of positive integers, find a contiguous subarray that adds up to a given number `S`.
 
-**Problem:** Subarray with given sum.
+**Example:**
+- **Input:** arr = [1, 4, 20, 3, 10, 5], sum = 33
+- **Output:** Found between indexes 2 and 4
+- **Explanation:** Elements at index 2, 3, and 4 are 20 + 3 + 10 = 33.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -149,7 +163,7 @@ void subarraySum(vector<int>& arr, int sum) {
 
 int main() {
     vector<int> arr = {1, 4, 20, 3, 10, 5};
-    subarraySum(arr, 33); // Found between indexes 2 and 4 (20+3+10)
+    subarraySum(arr, 33); // Found between indexes 2 and 4
     return 0;
 }
 ```
@@ -157,7 +171,17 @@ int main() {
 ## 6. Rotate a Matrix by 90 Degrees
 **Concept:** 2D Array manipulation is standard for Digital rounds. Instead of allocating a new matrix, do it in-place.
 
-**Problem:** Rotate Matrix 90 degrees clockwise in-place.
+**Example:**
+- **Input:** 
+  [[1, 2, 3],
+   [4, 5, 6],
+   [7, 8, 9]]
+- **Output:** 
+  [[7, 4, 1],
+   [8, 5, 2],
+   [9, 6, 3]]
+- **Explanation:** The matrix is rotated 90 degrees clockwise.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -182,7 +206,11 @@ void rotateMatrix(vector<vector<int>>& matrix) {
 ## 7. Next Greater Element
 **Concept:** Stack-based algorithms are a favorite. Find the next greater element for every element in an array.
 
-**Problem:** Next Greater Element
+**Example:**
+- **Input:** arr = [4, 5, 2, 25]
+- **Output:** [5, 25, 25, -1]
+- **Explanation:** 5 is greater than 4, 25 is greater than 5 and 2, and nothing is greater than 25.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -208,7 +236,11 @@ vector<int> nextGreaterElements(vector<int>& nums) {
 ## 8. Reverse Words in a String
 **Concept:** A string parsing question where you have to reverse the words, but keep the word itself intact, removing extra spaces.
 
-**Problem:** Reverse words in a string.
+**Example:**
+- **Input:** "  hello   world  "
+- **Output:** "world hello"
+- **Explanation:** The words are reversed and extra spaces are removed.
+
 ```cpp
 #include <iostream>
 #include <sstream>
@@ -239,7 +271,11 @@ int main() {
 ## 9. Longest Common Subsequence (LCS)
 **Concept:** A highly probable question for the **Prime** profile. Standard 2D Dynamic Programming.
 
-**Problem:** Length of LCS of two strings.
+**Example:**
+- **Input:** text1 = "abcde", text2 = "ace" 
+- **Output:** 3
+- **Explanation:** The longest common subsequence is "ace" and its length is 3.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -265,7 +301,11 @@ int longestCommonSubsequence(string text1, string text2) {
 ## 10. Find Missing and Repeating Number
 **Concept:** Math and Array combinations. Given an array of size $N$ containing numbers from 1 to $N$, one number is missing and one is repeating.
 
-**Problem:** Find them in $O(N)$ time and $O(1)$ space using math.
+**Example:**
+- **Input:** arr = [3, 1, 3]
+- **Output:** Missing: 2, Repeating: 3
+- **Explanation:** The array should contain 1, 2, 3. Number 2 is missing and 3 is repeated.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -282,10 +322,10 @@ void findMissingAndRepeating(vector<int>& arr) {
         actual_P += (long long)arr[i] * (long long)arr[i];
     }
     
-    long long diff_S = S - actual_S; // X - Y (Missing - Repeating)
-    long long diff_P = P - actual_P; // X^2 - Y^2
+    long long diff_S = S - actual_S; // Missing - Repeating
+    long long diff_P = P - actual_P; // Missing^2 - Repeating^2
     
-    long long sum_S = diff_P / diff_S; // X + Y
+    long long sum_S = diff_P / diff_S; // Missing + Repeating
     
     long long missing = (diff_S + sum_S) / 2;
     long long repeating = sum_S - missing;

@@ -2,6 +2,12 @@
 
 ## 31. Print All Prime Numbers in a Given Range
 **Concept:** Use a loop and a helper function to check if a number is prime. For a large range, Sieve of Eratosthenes is optimal.
+
+**Example:**
+- **Input:** L = 10, R = 30
+- **Output:** 11 13 17 19 23 29
+- **Explanation:** These are the only numbers between 10 and 30 divisible only by 1 and themselves.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -29,6 +35,12 @@ int main() {
 
 ## 32. Toggle All Characters in a String
 **Concept:** Convert uppercase characters to lowercase, and lowercase to uppercase using ASCII operations or `<cctype>` functions.
+
+**Example:**
+- **Input:** str = "HeLLo WoRLd"
+- **Output:** "hEllO wOrlD"
+- **Explanation:** All cases are inverted.
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -50,6 +62,12 @@ int main() {
 
 ## 33. Remove Vowels from a String
 **Concept:** Iterate through the string and append only the consonants to a new string.
+
+**Example:**
+- **Input:** str = "TCS NQT Preparation"
+- **Output:** "TCS NQT Prprtn"
+- **Explanation:** 'e', 'a', 'i', 'o' are removed from the string.
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -74,6 +92,12 @@ int main() {
 
 ## 34. Longest Palindrome in an Array of Strings
 **Concept:** Check each string for palindrome properties, and keep track of the one with the maximum length.
+
+**Example:**
+- **Input:** arr = ["abc", "radar", "racecar", "hello"]
+- **Output:** "racecar"
+- **Explanation:** Both "radar" and "racecar" are palindromes, but "racecar" is longer.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -99,6 +123,12 @@ string longestPalindromeStr(vector<string>& arr) {
 
 ## 35. Find the Equilibrium Index of an Array
 **Concept:** An equilibrium index is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes.
+
+**Example:**
+- **Input:** arr = [-7, 1, 5, 2, -4, 3, 0]
+- **Output:** 3
+- **Explanation:** The sum of elements to the left of index 3 is (-7 + 1 + 5) = -1. The sum to the right is (-4 + 3 + 0) = -1.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -125,6 +155,12 @@ int main() {
 
 ## 36. Left Rotate an Array by K Elements
 **Concept:** Use the reversal algorithm: Reverse the first $K$ elements, reverse the remaining $N-K$ elements, then reverse the whole array.
+
+**Example:**
+- **Input:** arr = [1, 2, 3, 4, 5], K = 2
+- **Output:** [3, 4, 5, 1, 2]
+- **Explanation:** Elements are shifted to the left by 2 positions.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -142,6 +178,12 @@ void leftRotate(vector<int>& arr, int k) {
 
 ## 37. Right Rotate an Array by K Elements
 **Concept:** Reverse the whole array, reverse the first $K$ elements, then reverse the remaining $N-K$ elements.
+
+**Example:**
+- **Input:** arr = [1, 2, 3, 4, 5], K = 2
+- **Output:** [4, 5, 1, 2, 3]
+- **Explanation:** Elements are shifted to the right by 2 positions.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -159,6 +201,12 @@ void rightRotate(vector<int>& arr, int k) {
 
 ## 38. Convert Octal to Decimal
 **Concept:** Extract digits from the right, multiply by increasing powers of 8, and add to the sum.
+
+**Example:**
+- **Input:** octal = 17
+- **Output:** 15
+- **Explanation:** (1 * 8^1) + (7 * 8^0) = 8 + 7 = 15.
+
 ```cpp
 #include <iostream>
 #include <cmath>
@@ -183,6 +231,12 @@ int main() {
 
 ## 39. Convert Binary to Decimal
 **Concept:** Similar to Octal to Decimal, but multiply by powers of 2.
+
+**Example:**
+- **Input:** binary = 1010
+- **Output:** 10
+- **Explanation:** (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (0 * 2^0) = 8 + 0 + 2 + 0 = 10.
+
 ```cpp
 #include <iostream>
 #include <cmath>
@@ -207,6 +261,12 @@ int main() {
 
 ## 40. Calculate Permutations (nPr) and Combinations (nCr)
 **Concept:** Calculate using the factorial formulas: $nPr = \frac{n!}{(n-r)!}$ and $nCr = \frac{n!}{r!(n-r)!}$.
+
+**Example:**
+- **Input:** N = 5, R = 2
+- **Output:** 5P2 = 20, 5C2 = 10
+- **Explanation:** 5P2 = 5! / 3! = 20. 5C2 = 5! / (2! * 3!) = 10.
+
 ```cpp
 #include <iostream>
 using namespace std;

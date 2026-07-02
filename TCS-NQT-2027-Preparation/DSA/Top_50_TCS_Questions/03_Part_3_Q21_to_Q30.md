@@ -2,6 +2,12 @@
 
 ## 21. Replace All 0s with 1s in a Given Integer
 **Concept:** Convert the integer to a string, replace characters, and convert back to integer.
+
+**Example:**
+- **Input:** N = 102030
+- **Output:** 112131
+- **Explanation:** All '0' digits in 102030 are replaced by '1'.
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -23,6 +29,12 @@ int main() {
 
 ## 22. Count Vowels, Consonants, Spaces in a String
 **Concept:** Iterate over each character and check using `isalpha()`, `isspace()`, and a custom vowel check.
+
+**Example:**
+- **Input:** str = "Hello World 123"
+- **Output:** Vowels: 3, Consonants: 7, Spaces: 2
+- **Explanation:** Vowels (e, o, o). Consonants (H, l, l, W, r, l, d). Spaces (2 spaces).
+
 ```cpp
 #include <iostream>
 #include <cctype>
@@ -51,6 +63,12 @@ int main() {
 
 ## 23. Find the Non-Repeating Elements in an Array
 **Concept:** Use a hash map to count the frequencies. Elements with a frequency of 1 are non-repeating.
+
+**Example:**
+- **Input:** arr = [1, 2, -1, 1, 3, 1]
+- **Output:** 2 -1 3
+- **Explanation:** 1 is repeating, while 2, -1, and 3 only appear once.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -78,6 +96,12 @@ int main() {
 
 ## 24. Sort First Half in Ascending, Second Half in Descending Order
 **Concept:** Find the midpoint. Sort the first half ascending, and sort the second half descending using a custom comparator.
+
+**Example:**
+- **Input:** arr = [5, 4, 6, 2, 1, 3, 8, -1]
+- **Output:** 2 4 5 6 8 3 1 -1
+- **Explanation:** First half [5, 4, 6, 2] sorted ascending is [2, 4, 5, 6]. Second half [1, 3, 8, -1] sorted descending is [8, 3, 1, -1].
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -94,13 +118,18 @@ int main() {
     vector<int> arr = {5, 4, 6, 2, 1, 3, 8, -1};
     customSort(arr);
     for (int num : arr) cout << num << " "; 
-    // Output: 2 4 5 6 8 3 1 -1 (assuming n/2 = 4)
     return 0;
 }
 ```
 
 ## 25. Find the Frequency of Elements in an Array
 **Concept:** Traverse the array and keep a count in a Hash Map. Very standard TCS question.
+
+**Example:**
+- **Input:** arr = [10, 20, 10, 30]
+- **Output:** 10 occurs 2 times, 20 occurs 1 times, 30 occurs 1 times
+- **Explanation:** Frequencies are accurately aggregated using a hash map.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -119,6 +148,12 @@ void countFrequency(vector<int>& arr) {
 
 ## 26. Count Even and Odd Elements in an Array
 **Concept:** Simple traversal using the modulo `% 2` operator.
+
+**Example:**
+- **Input:** arr = [1, 2, 3, 4, 5]
+- **Output:** Even: 2, Odd: 3
+- **Explanation:** 2 and 4 are even. 1, 3, and 5 are odd.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -136,6 +171,15 @@ void countEvenOdd(vector<int>& arr) {
 
 ## 27. Matrix Multiplication
 **Concept:** To multiply two matrices of sizes $M \times N$ and $N \times P$, use three nested loops. Time complexity $O(M \times N \times P)$.
+
+**Example:**
+- **Input:** 
+  A = [[1, 2], [3, 4]]
+  B = [[5, 6], [7, 8]]
+- **Output:** 
+  [[19, 22], [43, 50]]
+- **Explanation:** Row by column dot product multiplication.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -162,6 +206,16 @@ void multiplyMatrices(vector<vector<int>>& A, vector<vector<int>>& B) {
 
 ## 28. Find the Transpose of a Matrix
 **Concept:** Swap `matrix[i][j]` with `matrix[j][i]` for all $j > i$.
+
+**Example:**
+- **Input:** 
+  [[1, 2],
+   [3, 4]]
+- **Output:** 
+  [[1, 3],
+   [2, 4]]
+- **Explanation:** Rows become columns and columns become rows.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -179,6 +233,12 @@ void transpose(vector<vector<int>>& matrix) {
 
 ## 29. Calculate the Area of a Circle
 **Concept:** A basic geometry problem. The formula is $\pi \times r^2$.
+
+**Example:**
+- **Input:** r = 5
+- **Output:** 78.5398
+- **Explanation:** Area = 3.14159 * 5 * 5 = 78.5398.
+
 ```cpp
 #include <iostream>
 #define PI 3.1415926535
@@ -196,6 +256,12 @@ int main() {
 
 ## 30. Find the Roots of a Quadratic Equation
 **Concept:** For $ax^2 + bx + c = 0$, the roots are calculated using the determinant $D = b^2 - 4ac$.
+
+**Example:**
+- **Input:** a = 1, b = -3, c = 2
+- **Output:** Roots are real and different: 2, 1
+- **Explanation:** For x^2 - 3x + 2 = 0, x = 2 and x = 1 are the solutions.
+
 ```cpp
 #include <iostream>
 #include <cmath>

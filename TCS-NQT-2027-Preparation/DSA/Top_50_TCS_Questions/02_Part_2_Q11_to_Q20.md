@@ -2,6 +2,12 @@
 
 ## 11. Check if a Given Year is a Leap Year
 **Concept:** A year is a leap year if it is divisible by 400, or if it is divisible by 4 but not by 100.
+
+**Example:**
+- **Input:** year = 2024
+- **Output:** Leap Year
+- **Explanation:** 2024 is divisible by 4 and not by 100, so it is a leap year.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -21,6 +27,12 @@ int main() {
 
 ## 12. Find the GCD and LCM of Two Numbers
 **Concept:** The product of two numbers is equal to the product of their GCD and LCM.
+
+**Example:**
+- **Input:** a = 12, b = 15
+- **Output:** GCD: 3, LCM: 60
+- **Explanation:** 3 is the largest number that divides both 12 and 15. LCM = (12 * 15) / 3 = 60.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -42,6 +54,12 @@ int main() {
 
 ## 13. Fibonacci Series up to N terms
 **Concept:** Iterate and compute the next term as the sum of the previous two terms.
+
+**Example:**
+- **Input:** N = 10
+- **Output:** 0 1 1 2 3 5 8 13 21 34
+- **Explanation:** Each term is the sum of the two preceding terms.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -65,6 +83,12 @@ int main() {
 
 ## 14. Check if a String is a Palindrome
 **Concept:** Use two pointers, one at the start and one at the end, and compare characters.
+
+**Example:**
+- **Input:** str = "radar"
+- **Output:** Palindrome
+- **Explanation:** "radar" reads the same forwards and backwards.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -87,6 +111,12 @@ int main() {
 
 ## 15. Remove All Duplicates from a String
 **Concept:** Use a boolean array or hash set to keep track of visited characters.
+
+**Example:**
+- **Input:** str = "programming"
+- **Output:** "progamin"
+- **Explanation:** The second 'r', 'm', and 'g' are removed as they are duplicates.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -112,6 +142,12 @@ int main() {
 
 ## 16. Maximum Scalar Product of Two Vectors
 **Concept:** To get the maximum scalar (dot) product, sort both arrays in ascending order and multiply their corresponding elements.
+
+**Example:**
+- **Input:** arr1 = [1, 2, 6, 3, 7], arr2 = [10, 7, 45, 21, 34]
+- **Output:** 619
+- **Explanation:** Sorted arr1 = [1, 2, 3, 6, 7], Sorted arr2 = [7, 10, 21, 34, 45]. Scalar product = (1*7) + (2*10) + (3*21) + (6*34) + (7*45) = 619.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -139,6 +175,12 @@ int main() {
 
 ## 17. Check if a Number is Prime
 **Concept:** A prime number is only divisible by 1 and itself. Check divisibility up to the square root of the number.
+
+**Example:**
+- **Input:** N = 29
+- **Output:** Prime
+- **Explanation:** 29 has no divisors other than 1 and 29.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -159,6 +201,12 @@ int main() {
 
 ## 18. Find the Factorial of a Number
 **Concept:** Compute $N! = 1 \times 2 \times \dots \times N$. Use an iterative loop to avoid recursion overhead.
+
+**Example:**
+- **Input:** N = 5
+- **Output:** 120
+- **Explanation:** 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -179,6 +227,12 @@ int main() {
 
 ## 19. Sum of Digits of a Number
 **Concept:** Extract the last digit using `% 10` and reduce the number using `/ 10`.
+
+**Example:**
+- **Input:** N = 1234
+- **Output:** 10
+- **Explanation:** 1 + 2 + 3 + 4 = 10.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -200,6 +254,12 @@ int main() {
 
 ## 20. Check if a Number is an Armstrong Number
 **Concept:** A number is an Armstrong number if the sum of its own digits each raised to the power of the number of digits equals the number itself.
+
+**Example:**
+- **Input:** N = 153
+- **Output:** Armstrong
+- **Explanation:** 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153.
+
 ```cpp
 #include <iostream>
 #include <cmath>

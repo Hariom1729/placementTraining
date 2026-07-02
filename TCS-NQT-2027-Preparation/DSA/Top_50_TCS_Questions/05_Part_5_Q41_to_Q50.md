@@ -2,6 +2,12 @@
 
 ## 41. Find the Sum of Fractions
 **Concept:** Given two fractions `num1/den1` and `num2/den2`, find their sum and output it in the simplest form.
+
+**Example:**
+- **Input:** 1/2 + 3/4
+- **Output:** 5/4
+- **Explanation:** LCM of 2 and 4 is 4. (1*2 + 3*1)/4 = 5/4.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -26,6 +32,12 @@ int main() {
 
 ## 42. Check if Two Given Rectangles Overlap
 **Concept:** A rectangle is defined by its bottom-left and top-right coordinates. They don't overlap if one is entirely to the left, right, top, or bottom of the other.
+
+**Example:**
+- **Input:** Rect 1: (0, 10), (10, 0), Rect 2: (5, 5), (15, 0)
+- **Output:** Overlapping
+- **Explanation:** Both rectangles intersect each other.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -47,6 +59,12 @@ bool doOverlap(Point l1, Point r1, Point l2, Point r2) {
 
 ## 43. Check if a Number is a Perfect Number
 **Concept:** A perfect number is a positive integer that is equal to the sum of its proper divisors.
+
+**Example:**
+- **Input:** N = 28
+- **Output:** Yes
+- **Explanation:** Divisors of 28 are 1, 2, 4, 7, 14. Their sum is 1 + 2 + 4 + 7 + 14 = 28.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -63,13 +81,19 @@ bool isPerfect(int n) {
 }
 
 int main() {
-    cout << (isPerfect(28) ? "Yes" : "No") << endl; // Yes (1+2+4+7+14=28)
+    cout << (isPerfect(28) ? "Yes" : "No") << endl; // Yes
     return 0;
 }
 ```
 
 ## 44. Calculate the Sum of Numbers in a String
 **Concept:** A string contains alphanumeric characters. Extract contiguous digits to form numbers and sum them up.
+
+**Example:**
+- **Input:** str = "12abc20xyz3"
+- **Output:** 35
+- **Explanation:** 12 + 20 + 3 = 35.
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -103,6 +127,12 @@ int main() {
 
 ## 45. Sort an Array According to the Order Defined by Another Array
 **Concept:** Use a custom comparator or a hash map to count occurrences and place elements according to the second array.
+
+**Example:**
+- **Input:** A1 = [2, 1, 2, 5, 7, 1, 9, 3, 6, 8, 8], A2 = [2, 1, 8, 3]
+- **Output:** 2 2 1 1 8 8 3 5 6 7 9
+- **Explanation:** Order matching A2 is placed first, and the remaining elements in A1 are appended in ascending order.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -140,6 +170,12 @@ void sortA1ByA2(vector<int>& A1, vector<int>& A2) {
 
 ## 46. Maximum Product Subarray
 **Concept:** Keep track of the maximum and minimum product ending at the current element, because a negative number multiplied by a minimum (negative) product becomes a maximum product.
+
+**Example:**
+- **Input:** arr = [2, 3, -2, 4]
+- **Output:** 6
+- **Explanation:** Subarray [2, 3] yields the maximum product 6.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -166,6 +202,12 @@ int main() {
 
 ## 47. Longest Common Prefix Among an Array of Strings
 **Concept:** Sort the strings lexicographically and compare only the first and the last strings.
+
+**Example:**
+- **Input:** strs = ["flower", "flow", "flight"]
+- **Output:** "fl"
+- **Explanation:** All three strings start with "fl".
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -188,7 +230,13 @@ string longestCommonPrefix(vector<string>& strs) {
 ```
 
 ## 48. Check if a Number is an Automorphic Number
-**Concept:** An automorphic number is a number whose square ends in the same digits as the number itself (e.g., $5^2 = 25$, $76^2 = 5776$).
+**Concept:** An automorphic number is a number whose square ends in the same digits as the number itself.
+
+**Example:**
+- **Input:** N = 76
+- **Output:** Automorphic
+- **Explanation:** 76 * 76 = 5776, which ends in 76.
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -211,6 +259,12 @@ int main() {
 
 ## 49. Reverse an Array in Groups of Given Size
 **Concept:** Iterate through the array with a step of `k` and reverse the sub-array of size `k`.
+
+**Example:**
+- **Input:** arr = [1, 2, 3, 4, 5, 6, 7], K = 3
+- **Output:** 3 2 1 6 5 4 7
+- **Explanation:** [1,2,3] is reversed, [4,5,6] is reversed, and [7] is left as is.
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -231,6 +285,12 @@ void reverseInGroups(vector<int>& arr, int k) {
 
 ## 50. Maximum Difference Between Two Elements (Larger Appears After Smaller)
 **Concept:** Keep track of the minimum element seen so far and update the maximum difference.
+
+**Example:**
+- **Input:** arr = [2, 3, 10, 6, 4, 8, 1]
+- **Output:** 8
+- **Explanation:** The maximum difference is between 10 and 2 (10 - 2 = 8).
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -255,7 +315,7 @@ int maxDifference(vector<int>& arr) {
 
 int main() {
     vector<int> arr = {2, 3, 10, 6, 4, 8, 1};
-    cout << "Max Difference: " << maxDifference(arr) << endl; // Output: 8 (10 - 2)
+    cout << "Max Difference: " << maxDifference(arr) << endl; // Output: 8
     return 0;
 }
 ```
