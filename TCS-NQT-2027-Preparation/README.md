@@ -30,6 +30,18 @@ Whether you are aiming for **Ninja (3.36 LPA)**, **Digital (7.0 LPA)**, or **Pri
 
 ---
 
+## 🔥 High-Frequency Coding Topics (Must Do)
+
+If you are short on time, prioritize these **highly tested** DSA topics for the TCS NQT coding rounds:
+
+1. **Number Theory & Math:** (Very High Probability) Prime numbers, Sieve of Eratosthenes, GCD/LCM, Digit manipulation (Armstrong, Palindrome), Modular Exponentiation.
+2. **Arrays & Strings:** Two Pointers, Sliding Window, Prefix Sum, String frequencies, Anagrams.
+3. **Sorting & Searching:** Binary Search on answers, custom sorting logic.
+4. **Stack & Queue:** Valid Parentheses, Next Greater/Smaller Element.
+5. **Dynamic Programming (For Prime Profile):** Knapsack, Longest Common Subsequence (LCS), 1D DP.
+
+---
+
 ## 🗺️ Roadmap
 
 To maximize your chances, follow this structured roadmap:
